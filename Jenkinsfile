@@ -4,7 +4,7 @@ pipeline{
     stage("build"){
       steps{
         sh "npm --version"
-        sh 'echo "hello world"'
+        sh 'echo $hostname '
         sh '''
           echo "$whoami"
         '''
