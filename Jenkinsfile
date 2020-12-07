@@ -3,10 +3,12 @@ pipeline{
   stages{
     stage("build"){
       steps{
-       // sh " 'echo $hostname' "
-        sh '''
+        script{
+          sh " 'echo $hostname' "
+        }
+       /* sh '''
           echo "$whoami"
-        '''
+        ''' */
       }
     }
   }
