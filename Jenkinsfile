@@ -5,6 +5,7 @@ pipeline{
       steps{
          sh 'echo $(whoami)'
         sh 'hostname'
+        sh 'sudo yum install vim -y'
       }
     }
 }
